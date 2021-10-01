@@ -5,4 +5,133 @@
 }
 body {
 	font-family: sans-serif;
+	color: #Fff;
+	background-color: black;
+}
+Ul,li {
+	list-style: none;
+}
+/* HEADER TOP */
+.header-top {
+	background-color: #dedede;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top: 1px solid #82878b;
+	position: relative;
+}
+.header-top__title {
+	color: #353125;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 25px;
+}
+.circle {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	background-color: #f15b4c;
+	top: 50%;
+	left: 2%;
+	transform: translatey(-50%);
+	border-radius: 50%;
+}
+.circle::before {
+	content:"";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	background-color: #f7c32f;
+	transform: translatex(-150%);
+	border-radius: 50%;
+
+}
+.circle::after {
+	content:"";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	background-color: #29c84a;
+	transform: translatex(150%);
+	border-radius: 50%;
+
+}
+/* UTILITY */
+.pg-9 {
+	padding: 9px;
+}
+.pg-5 {
+	padding: 5px;
+}
+.container {
+	max-width: 1145px;
+	margin: 0 auto;
+}
+.ds-blk {
+	display: block;
+}
+.fsz-25 {
+	font-size: 25px;
+}
+/* HEADER bottom */
+.header-bootom {
+	text-align: end;
+}
+.header-bootom__btn {
+	padding: 8px 6px;
+	border: none;
+	color: #Fff;
+	background: linear-gradient(180deg, rgb(77, 76, 76) 0%, rgb(39, 39, 39) 100%);
+	border-radius: 4px;
+}
+/* MAIN BLOCK  */
+.block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.block__inner {
+	max-height: 125px;
+	max-width: 225px;
+	position: relative;
+	overflow: hidden;
+	margin: 2px 2px;
+}
+.block__img {
+	object-fit: cover;
+	width: 100%;
+
+}
+.block__name {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+
+}
+/* FOOTER */
+.footer{ 
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+
+}
+.footer__items {
+	display: flex;
+	align-items: center;
+}
+.footer__mute {
+	text-align: center;
+}
+.footer-arow {
+}
+.footer__left,
+.footer__right,
+.footer__center {
+	display: flex;
+}
+.fotter__button {
+	border: 0;
+	background-color: #4a4b4d;
+	color: #f55845;
 }
