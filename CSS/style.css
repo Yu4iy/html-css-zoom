@@ -96,6 +96,10 @@ Ul,li {
 	background: linear-gradient(180deg, rgb(77, 76, 76) 0%, rgb(39, 39, 39) 100%);
 	border-radius: 4px;
 }
+.header-bootom__btn:hover {
+	background: linear-gradient(180deg, rgb(117, 117, 117) 0%, rgb(63, 63, 63) 100%);
+	
+}
 /* MAIN BLOCK  */
 .block {
 	display: flex;
@@ -108,12 +112,17 @@ Ul,li {
 	position: relative;
 	overflow: hidden;
 	margin: 2px 2px;
+	border: 2px solid transparent;
+}
+.block__inner:hover {
+	border: 2px solid greenyellow
 }
 .block__img {
 	object-fit: cover;
 	width: 100%;
 
 }
+
 .block__name {
 	position: absolute;
 	bottom: 0;
@@ -132,6 +141,10 @@ Ul,li {
 	display: flex;
 	align-items: center;
 }
+.footer__items:hover {
+	background-color: rgba(128, 128, 128, 0.247);
+	
+}
 .footer__mute {
 	text-align: center;
 }
@@ -147,4 +160,8 @@ Ul,li {
 	border: 0;
 	background-color: #4a4b4d;
 	color: #f55845;
+}
+.fotter__button:hover{
+	background-color: #5d5e5f;
+	color: #f1503e;
 }
