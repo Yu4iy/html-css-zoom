@@ -141,15 +141,41 @@ Ul,li {
 	display: flex;
 	align-items: center;
 }
-.footer__items:hover {
+.footer__items:hover .footer__mute{
 	background-color: rgba(128, 128, 128, 0.247);
 	
 }
 .footer__mute {
 	text-align: center;
+    padding: 4px;
+    border-radius: 10px;
+    transition: linear 0.1s;
+}
+.footer__mute--active {
+    color:green ;
 }
 .footer-arow {
-	margin-left: 6px;
+    padding: 17px 6px;
+    position: relative;
+}
+.footer-arow:hover{
+    background-color: rgba(87, 87, 87, 0.247) ;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.footer-arow:hover .window{
+    display: block;
+    z-index: 20;
+}
+
+.window {
+    position: absolute;  
+    top: -50px;
+    background-color: rgb(255, 255, 255);
+    display: none;
 }
 .footer__left,
 .footer__right,
