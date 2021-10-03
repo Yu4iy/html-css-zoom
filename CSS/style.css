@@ -7,6 +7,12 @@ body {
 	font-family: sans-serif;
 	color: #e5e5e5;
 	background-color: black;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+main {
+	flex-grow: 1;
 }
 Ul,li {
 	list-style: none;
@@ -96,24 +102,32 @@ Ul,li {
 	background: linear-gradient(180deg, rgb(77, 76, 76) 0%, rgb(39, 39, 39) 100%);
 	border-radius: 4px;
 	position: relative;
+	/* PERCHE transition: 1s linear ; NON FUNZIONA?? */
 }
 
 .header-bootom__btn:hover .window-top {
-	display: inline-block;
-	z-index: 20;
+	height: auto;
+	background: linear-gradient(180deg, rgb(36, 35, 35) 0%, rgb(27, 27, 27) 100%);
+	border: solid  #323233 3px;
+	/* display: block; */
 }
+
+.header-bootom__btn:hover {
+	background: linear-gradient(180deg, rgb(88, 88, 88) 0%, rgb(54, 54, 54) 100%);
+}
+
 .window-top {
    position: absolute;
-	height: auto;  
+	height: 0; 
+	overflow: hidden; 
+	/* display: none; */
    top: 0;
 	left: 0;
-	background: linear-gradient(180deg, rgb(36, 35, 35) 0%, rgb(27, 27, 27) 100%);
-   display: none;
 	transform: translatey(33px);
 	width: 100%;
-	border: solid #323233 3px;
 	line-height: 35px;
 	border-radius: 4px;
+	border: solid  transparent 3px;
 }
 .window__items {
 	border: 2px solid black;
@@ -213,12 +227,6 @@ Ul,li {
    z-index: 20;
 }
 
-.window {
-   position: absolute;  
-   top: -50px;
-   background-color: rgb(255, 255, 255);
-   display: none;
-}
 .footer__left,
 .footer__right,
 .footer__center {
